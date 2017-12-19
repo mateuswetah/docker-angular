@@ -7,10 +7,10 @@ To run this:
 $ git clone https://github.com/mateuswetah/docker-angular.git
 $ cd docker-angular
 $ docker build -t angular-image.
-$ docker run -td --name angular -h angular -p 4200:4200 -v /home/<YOUR_WORKING_DIRECTORY_PATH>/docker-angular:/home/node/ angular-image /bin/bash
+$ docker run -td --name angular -h angular -p 4200:4200 -v /home/<YOUR_WORKING_DIRECTORY_PATH>/docker-angular:/home/node angular-image /bin/bash
 $ docker exec -it angular /bin/bash
 ```
-Notice that, _/docker-angular_ it's just a suggestion for directory to be mapped. The /node folder will exist as the _node_ docker image creates this user, and it's where you should work.
+Notice that _/docker-angular_ it's just a suggestion for directory to be mapped. The /node folder will exist as the _node_ docker image creates this user, and it's where you should work.
 
 Inside the container, don't forget to change to your user in case you want to edit files from an editor in Host:
 
