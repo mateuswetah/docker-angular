@@ -2,6 +2,8 @@
 
 FROM node:latest
 
+ENV ANGULAR_CLI_VERSION=1.6.1
+
 ### Python, & Git -------------------------------------------------
 
     RUN apt-get -qq update && \
@@ -14,7 +16,7 @@ FROM node:latest
 
 
 ### Angular ---------------------------------------------
-	RUN npm install --unsafe-perm -g @angular/cli findup-sync typescript && \
+	RUN npm install --unsafe-perm -g @angular/cli@"ANGULAR_CLI_VERSION" findup-sync typescript && \
 		npm cache verify
 
 ### User script ---------------------------------------------------

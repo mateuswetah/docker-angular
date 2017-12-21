@@ -1,6 +1,6 @@
 # Docker Angular
 
-A Docker reppository for development in Angular
+A Docker repository for open-source development in Angular. Specify your desired Angular CLI version in _Dockerfile_.
 
 To run this:
 ```
